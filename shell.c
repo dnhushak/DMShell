@@ -8,6 +8,7 @@
 #include "processHistory.h"
 #include "diceRoller.h"
 #include <fcntl.h>
+#include "stats.h"
 
 int main(int argc, char *argv[]) {
 
@@ -34,6 +35,8 @@ int main(int argc, char *argv[]) {
 		}
 
 	}
+
+	rollStats(0);
 
 	//Main loop
 	while (1) {
